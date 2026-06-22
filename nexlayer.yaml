@@ -1,0 +1,10 @@
+application:
+  name: pgweb
+  pods:
+  - name: app
+    image: sosedoff/pgweb:latest
+    path: /
+    servicePorts:
+    - 8081
+    vars:
+      PGWEB_SESSIONS: "1"
